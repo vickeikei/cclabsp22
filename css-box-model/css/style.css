@@ -1,0 +1,30 @@
+body {
+    /* background-color: gray; */
+    margin: 0;
+}
+
+div {
+    background-color: bisque;
+    width: 200px;
+    height: 150px;
+    margin: 20px 150px;
+    /*top+bottom, left+right start from top and rotates clockwise*/
+    /* needs all three for border */
+    border: 5px solid black;
+    /* border-width: 5px;
+    border-style: dashed;
+    border-color: cornflowerblue; */
+}
+
+p {
+    /* background-color: aquamarine; */
+    margin: 10px;
+}
+#special-box {
+    background-color: yellowgreen;
+
+    position: fixed;
+    left: 150px;
+    top: 200px;
+
+}

@@ -1,0 +1,106 @@
+html,
+body {
+  margin: auto;
+  padding: 0;
+  background-color: aliceblue;
+
+}
+
+h1 {
+  text-align: left;
+  color: rgb(73, 111, 161);
+}
+
+h2 {
+  text-align: left;
+  color: rgb(123, 162, 209);
+
+}
+
+p {
+  text-align: left;
+  color: slategrey;
+}
+
+a:link {
+  color: rgb(123, 162, 209);
+  text-align: left;
+  text-decoration: none;
+}
+
+a:visited {
+  color: dodgerblue;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(59, 94, 141);
+  text-align: left;
+  text-decoration: overline;
+}
+
+
+canvas {
+  display: block;
+}
+
+div {
+  /* background-color: steelblue; */
+  width: 600px;
+  height: 80px;
+
+  /* border-width: 5px;
+  border-style: dotted;
+  border-color:skyblue; */
+
+  padding: 10px 10px;
+  margin: 10px 15px;
+
+}
+
+
+#my-container {
+  /* border-width: 0; */
+  position: absolute;
+  margin: auto;
+  left: 800px;
+  top: 125px;
+}
+
+#my-text {
+  width: 400px;
+  height: 100px;
+  position: absolute;
+  margin: auto;
+  left: 300px;
+  top: 200px;
+}
+
+#my-link {
+  width: 100px;
+  height: 25px;
+  position: absolute;
+  margin: auto;
+  left: 600px;
+  top: 300px;
+
+}
+img{
+  display: inline-block;
+  margin-left: 200px;
+}
+
+#blueinfl {
+  border-width: 0;
+  position: absolute;
+  margin: auto;
+  width: 1200px;
+  height: 25px;
+  left: 125px;
+  top: 40px;
+  text-align: left;
+  color: rgb(123, 162, 209);
+  font-family: 'Shippori Mincho', serif;
+  /* font-size: 100%; */
+}
