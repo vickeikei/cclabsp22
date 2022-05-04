@@ -63,8 +63,8 @@ function draw() {
   //vega constellation
   let vega = new MainStars(278, 117);
   vega.update();
-  vega.display();
   vega.checkMouse();
+  vega.display();
 
   let v = new LittleStars(280, 182);
   v.update();
@@ -117,14 +117,15 @@ class MainStars {
     let distance = dist(this.x, this.y, mouseX, mouseY);
     if (distance < 20) {
       if (this.x == 617){
-        this.starName = "altair"
-        console.log("hi")
+        this.starName = "a l t a i r"
+        if (mouseIsPressed) {
+          window.location.href = "altairStory.html";
+        }
       } else if (this.x == 278){
-        this.starName = "vega"
-      }
-      if (mouseIsPressed) {
-        //count += 1;
-        console.log(true);
+        this.starName = "v e g a"
+        if (mouseIsPressed) {
+          window.location.href = "vegaStory.html";
+        }
       }
     } else{
       this.starName = ""
