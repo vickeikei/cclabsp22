@@ -1,5 +1,5 @@
 function setup() {
-    let canvas = createCanvas(1400, 800);
+    let canvas = createCanvas(700, 400);
     canvas.id("storyv1-container");
     rectMode(CENTER);
     angleMode(DEGREES);
@@ -16,7 +16,6 @@ function drawVega(x, y){
     drawBody(x, y);
     push();
     translate(x, y);
-    scale(2);
     rotate(-50);
     circle(8, -25, 20);
     ellipse(-5, -25, 30, 20);
@@ -27,14 +26,12 @@ function drawVega(x, y){
     noFill();
     push();
     translate(x, y);
-    scale(2);
     rotate(30);
     circle(30, 10, 30);
     arc(35, 40, 60, 30, 60, PI)
     pop();
     push();
     translate(x, y);
-    scale(2);
     rotate(-30);
     circle(-30, 10, 30);
     arc(-40, 40, 60, 30, 160, 60)
@@ -47,7 +44,6 @@ function drawVega(x, y){
     drawBody(x, y);
     push();
     translate(x, y);
-    scale(2);
     circle(0, -30, 30);
     pop();
   }
@@ -57,7 +53,6 @@ function drawVega(x, y){
     drawBody(x, y);
     push();
     translate(x, y);
-    scale(2);
     rotate(-50);
     circle(-3, -30, 20);
     ellipse(-5, -25, 30, 20);
@@ -68,7 +63,6 @@ function drawVega(x, y){
     noFill();
     push();
     translate(x, y);
-    scale(2);
     rotate(-20);
     circle(-30, -9, 15);
     circle(-30, 3, 20);
@@ -78,7 +72,6 @@ function drawVega(x, y){
   function drawBody(x, y){
     push();
     translate(x, y);
-    scale(2);
     circle(0, 0, 50)
     circle(0, 40, 50);
     rect(0, 60, 50);

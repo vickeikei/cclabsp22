@@ -1,102 +1,98 @@
 function setup() {
-  //let canvas = createCanvas(windowWidth, windowHeight);
-  let canvas = createCanvas(2000, 1100);
-  canvas.id("my-container");
-  //canvas.id("p5-canvas");
-  
+  createCanvas(1000, 550);
 }
 
 function draw() {
   background(0);
   //text
-  textSize(30)
+  textSize(15)
   fill(255, 255);
   textFont('Prata');
-  text('pick', 120, 200);
-  text('a', 200, 240);
-  text('star', 240, 280);
-  textSize(120);
-  text('   a', 180, 700)
-  text('starcrossed', 180, 820)
-  text('                story.', 180, 940)
+  text('pick', 60, 100);
+  text('a', 100, 120);
+  text('star', 120, 140);
+  textSize(60);
+  text('   a', 90, 350)
+  text('starcrossed', 90, 410)
+  text('                story.', 90, 470)
   
   //altair constellation
-  let altair = new MainStars(1234, 636);
+  let altair = new MainStars(617, 318);
   altair.update();
   altair.checkMouse();
   altair.display();
+  
 
-  let a = new LittleStars(1560, 718);
+  let a = new LittleStars(780, 359);
   a.update();
   a.display();
-  let a1 = new LittleStars(1442, 242);
+  let a1 = new LittleStars(721, 121);
   a1.update();
   a1.display();
-  let a2 = new LittleStars(1394, 298);
+  let a2 = new LittleStars(697, 149);
   a2.update();
   a2.display();
-  let a3 = new LittleStars(1242, 560);
+  let a3 = new LittleStars(621, 280);
   a3.update();
   a3.display();
-  let a4 = new LittleStars(1212, 696);
+  let a4 = new LittleStars(606, 348);
   a4.update();
   a4.display();
-  let a5 = new LittleStars(1438, 884);
+  let a5 = new LittleStars(719, 442);
   a5.update();
   a5.display();
-  let a6 = new LittleStars(1364, 1042);
+  let a6 = new LittleStars(682, 521);
   a6.update();
   a6.display();
-  let a7 = new LittleStars(1804, 842);
+  let a7 = new LittleStars(902, 421);
   a7.update();
   a7.display();
-  
-  strokeWeight(2);
+
   stroke(255, 200);
-  line(1234, 636, 1560, 718);
-  line(1234, 636, 1242, 560);
-  line(1234, 636, 1212, 696);
-  line(1560, 718, 1438, 884);
-  line(1438, 884, 1364, 1042);
-  line(1560, 718, 1804, 842);
-  line(1560, 718, 1394, 298);
-  line(1394, 298, 1442, 242);
+  line(617, 318, 780, 359);
+  line(617, 318, 621, 280);
+  line(617, 318, 606, 348);
+  line(780, 359, 719, 442);
+  line(719, 442, 682, 521);
+  line(780, 359, 902, 421);
+  line(780, 359, 697, 149);
+  line(697, 149, 721, 121);
   
   //vega constellation
-  let vega = new MainStars(556, 234);
+  let vega = new MainStars(278, 117);
   vega.update();
-  vega.checkMouse();
   vega.display();
+  vega.checkMouse();
 
-  let v = new LittleStars(560, 364);
+  let v = new LittleStars(280, 182);
   v.update();
   v.display();
-  let v1 = new LittleStars(560, 464);
+  let v1 = new LittleStars(280, 232);
   v1.update();
   v1.display();
-  let v2 = new LittleStars(702, 436);
+  let v2 = new LittleStars(351, 218);
   v2.update();
   v2.display();
-  let v3 = new LittleStars(702, 554);
+  let v3 = new LittleStars(351, 277);
   v3.update();
   v3.display();
   
   stroke(255, 200);
-  line(556, 234, 560, 364);
-  line(560, 364, 560, 464);
-  line(560, 464, 702, 554);
-  line(702, 554, 702, 436);
-  line(702, 436, 560, 364);
+  line(278, 117, 280, 182);
+  line(280, 182, 280, 232);
+  line(280, 232, 351, 277);
+  line(351, 277, 351, 218);
+  line(351, 218, 280, 182);
 }
 
 class LittleStars {
   constructor(x, y) {
     this.x = x;
     this.y = y;
-    this.size = 20;
+    this.size = 5;
   }
   update() {
-    this.size = map(sin(frameCount * 0.1), -1, 1, 10, 20);
+    this.size = map(sin(frameCount * 0.1), -1, 1, 5, 8);
   }
   display() {
     noStroke();
@@ -110,7 +106,7 @@ class MainStars {
     this.x = x;
     this.y = y;
     this.scale;
-    this.starName = ""
+    this.starName = '';
   }
   update() {
     this.scale = map(sin(frameCount * 0.1), -1, 1, 1, 2);
@@ -118,12 +114,11 @@ class MainStars {
   checkMouse() {
     let distance = dist(this.x, this.y, mouseX, mouseY);
     if (distance < 20) {
-      if (this.x == 1234){
-        this.starName = "a l t a i r"
-        window.location.href = "altairStory.html";
-      } else if (this.x == 556){
-        this.starName = "v e g a"
-        window.location.href = "vegaStory.html";
+      if (this.x == 617){
+        this.starName = "altair"
+        console.log("hi")
+      } else if (this.x == 278){
+        this.starName = "vega"
       }
       if (mouseIsPressed) {
         //count += 1;
@@ -139,8 +134,8 @@ class MainStars {
     fill(255, 100);
     translate(this.x, this.y);
     scale(this.scale);
-    circle(0, 0, 30);
-    circle(0, 0, 15);
+    circle(0, 0, 10);
+    circle(0, 0, 5);
     pop();
 
     push();
@@ -151,9 +146,9 @@ class MainStars {
     line(0, -5, 0, 5);
     line(-5, 0, 5, 0);
     pop();
-
+    
     push();
-    textSize(30)
+    textSize(15)
     fill(255, 255);
     textFont('Prata');
     text(this.starName, width/2, height/2);

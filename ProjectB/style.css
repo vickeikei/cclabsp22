@@ -19,50 +19,50 @@ canvas {
 }
 #storyv1-container {
   position: absolute;
-  left: 200px;
-  top: 200px;
+  left: 100px;
+  top: 100px;
 }
 
 #text1-container {
   position: absolute;
-  left: 400px;
-  top: 1075px;
+  left: 200px;
+  top: 537px;
 }
 
 #text2-container {
   position: absolute;
-  left: 1800px;
-  top: 1075px;
+  left: 900px;
+  top: 537px;
 }
 
 #text3-container {
   position: absolute;
-  left: 3200px;
-  top: 1075px;
+  left: 1600px;
+  top: 537px;
 }
 
 #text4-container {
   position: absolute;
-  left: 4600px;
-  top: 1075px;
+  left: 2300px;
+  top: 537px;
 }
 
 #text5-container {
   position: absolute;
-  left: 6000px;
-  top: 1075px;
+  left: 3000px;
+  top: 537px;
 }
 
 #text6-container {
   position: absolute;
-  left: 7400px;
-  top: 1075px;
+  left: 3700px;
+  top: 537px;
 }
 
 #text7-container {
   position: absolute;
-  left: 8800px;
-  top: 1075px;
+  left: 4400px;
+  top: 537px;
 }
 
 #storyv2-container {
@@ -83,13 +83,13 @@ canvas {
   transform: translate(-50%, -50%);
 }
 p {
-  font-size: 30px;
+  font-size: 15px;
   text-align: center;
-  width: 1000px;
+  width: 500px;
 }
 
 h1 {
-  font-size: 80px;
+  font-size: 40px;
   text-align: center;
 }
 
@@ -97,7 +97,7 @@ a {
   text-decoration: none;
   display: inline-block;
   text-align: left;
-  font-size: 60px;
+  font-size: 30px;
 }
 
 div {
