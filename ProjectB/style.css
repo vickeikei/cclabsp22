@@ -1,0 +1,106 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Prata', serif;
+}
+canvas {
+  display: block;
+  position: fixed;
+}
+
+#my-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#whole-page {
+  position: relative;
+}
+#storyv1-container {
+  position: absolute;
+  left: 200px;
+  top: 200px;
+}
+
+#text1-container {
+  position: absolute;
+  left: 400px;
+  top: 1075px;
+}
+
+#text2-container {
+  position: absolute;
+  left: 1800px;
+  top: 1075px;
+}
+
+#text3-container {
+  position: absolute;
+  left: 3200px;
+  top: 1075px;
+}
+
+#text4-container {
+  position: absolute;
+  left: 4600px;
+  top: 1075px;
+}
+
+#text5-container {
+  position: absolute;
+  left: 6000px;
+  top: 1075px;
+}
+
+#text6-container {
+  position: absolute;
+  left: 7400px;
+  top: 1075px;
+}
+
+#text7-container {
+  position: absolute;
+  left: 8800px;
+  top: 1075px;
+}
+
+#storyv2-container {
+  position: absolute;
+  left: 2000px;
+  top: 200px;
+}
+#container {
+  position: absolute;
+  left: 2000px;
+  top: 200px;
+}
+
+#wip {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+p {
+  font-size: 30px;
+  text-align: center;
+  width: 1000px;
+}
+
+h1 {
+  font-size: 80px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  text-align: left;
+  font-size: 60px;
+}
+
+div {
+  float: inline-start;
+}
+

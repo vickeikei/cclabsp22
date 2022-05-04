@@ -1,0 +1,45 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* body{
+  height: 2000px;
+
+} */
+
+canvas {
+  display: block;
+  /* position: fixed; */
+}
+
+#stage {
+  position: relative; 
+  width: 3000px;
+  height: 600px;
+}
+
+#canvas-container {
+  position: fixed;
+  /*z-index: -1; which layer you want to have things*/
+
+}
+
+.obstacle {
+  /* display: inline-block; */
+  position: absolute;
+  bottom: 0px; /*bottom of parent element*/
+  width: 200px;
+  height: 200px;
+  background-color: green;
+}
+
+.fan {
+  /* display: inline-block; */
+  position: absolute;
+  bottom: 0px; 
+  width: 100px;
+  height: 25px;
+  background-color: blue;
+}
