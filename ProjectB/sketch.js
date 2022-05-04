@@ -1,5 +1,7 @@
 function setup() {
-  createCanvas(1000, 550);
+  let canvas = createCanvas(1000, 550);
+ canvas.id("my-container");
+
 }
 
 function draw() {
