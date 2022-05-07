@@ -5,75 +5,28 @@ html, body {
 }
 canvas {
   display: block;
-  position: fixed;
+  z-index: -1; 
 }
 
 
 #my-container {
+  width: 700px;
+  height:700px;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
 
-#storya1-container {
-  position: absolute;
-  left: 100px;
-  right: 100px;
-  top: 100px;
-}
-
 .text-container {
   position: absolute;
-  left: 50%;
-  top: 75%;
-  transform: translate(-50%, -50%);
+  width: 100%;
+  bottom: 2%;
   text-align: center;
 }
 
-#text1-container {
-  position: absolute;
-  left: 200px;
-  top: 25%;
-}
-
-#text2-container {
-  position: absolute;
-  left: 900px;
-  top: 25%;
-}
-
-#text3-container {
-  position: absolute;
-  left: 1600px;
-  top: 25%;
-}
-
-#text4-container {
-  position: absolute;
-  left: 2300px;
-  top: 25%;
-}
-
-#text5-container {
-  position: absolute;
-  left: 3000px;
-  top: 25%;
-}
-
-#text6-container {
-  position: absolute;
-  left: 3700px;
-  top: 25%;
-}
-
-#text7-container {
-  position: absolute;
-  left: 4400px;
-  top: 25%;
-}
-#instructions {
-  display: none;
+.text-container-p {
+ width: 100%;
 }
 
 p {
@@ -81,11 +34,6 @@ p {
   text-align: center;
   width: 500px;
 }
-
-/* h1 {
-  font-size: 40px;
-  text-align: center;
-} */
 
 a:link, a:visited {
   color: black;
@@ -99,8 +47,20 @@ a:hover, a:active {
   display: inline-block;
 }
 
-
 div {
   float: inline-start;
+}
+
+.panel-box {
+  float: left;
+  margin: 0 100px;
+}
+
+#altair-container{
+  width: 5000px;
+  height: 500px;
+  position: absolute;
+  /* top: 50%; 100px */
+  top: 35%;
 }
 
