@@ -124,7 +124,7 @@ class MainStars {
       } else if (this.x == 278){
         this.starName = "v e g a"
         if (mouseIsPressed) {
-          window.location.href = "vegaStory.html";
+          window.location.href = "vegaStory1.html";
         }
       }
     } else{
@@ -156,5 +156,14 @@ class MainStars {
     textFont('Prata');
     text(this.starName, width/2, height/2);
     pop();
+  }
+}
+
+function clickMe(){
+  let x = document.getElementById("instructions");
+  if (x.style.display == "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
   }
 }

@@ -8,97 +8,97 @@ canvas {
   position: fixed;
 }
 
+
 #my-container {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
-#whole-page {
-  position: relative;
-}
-#storyv1-container {
+
+#storya1-container {
   position: absolute;
   left: 100px;
+  right: 100px;
   top: 100px;
+}
+
+.text-container {
+  position: absolute;
+  left: 50%;
+  top: 75%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 #text1-container {
   position: absolute;
   left: 200px;
-  top: 537px;
+  top: 25%;
 }
 
 #text2-container {
   position: absolute;
   left: 900px;
-  top: 537px;
+  top: 25%;
 }
 
 #text3-container {
   position: absolute;
   left: 1600px;
-  top: 537px;
+  top: 25%;
 }
 
 #text4-container {
   position: absolute;
   left: 2300px;
-  top: 537px;
+  top: 25%;
 }
 
 #text5-container {
   position: absolute;
   left: 3000px;
-  top: 537px;
+  top: 25%;
 }
 
 #text6-container {
   position: absolute;
   left: 3700px;
-  top: 537px;
+  top: 25%;
 }
 
 #text7-container {
   position: absolute;
   left: 4400px;
-  top: 537px;
+  top: 25%;
+}
+#instructions {
+  display: none;
 }
 
-#storyv2-container {
-  position: absolute;
-  left: 2000px;
-  top: 200px;
-}
-#container {
-  position: absolute;
-  left: 2000px;
-  top: 200px;
-}
-
-#wip {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
 p {
   font-size: 15px;
   text-align: center;
   width: 500px;
 }
 
-h1 {
+/* h1 {
   font-size: 40px;
   text-align: center;
-}
+} */
 
-a {
+a:link, a:visited {
+  color: black;
   text-decoration: none;
   display: inline-block;
-  text-align: left;
-  font-size: 30px;
 }
+
+a:hover, a:active {
+  color: red;
+  text-decoration: none;
+  display: inline-block;
+}
+
 
 div {
   float: inline-start;

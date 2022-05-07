@@ -1,37 +1,34 @@
-
+let colorBack;
 function setup() {
-  let canvas = createCanvas(700, 400);
-  canvas.id("my-container");
+    let canvas = createCanvas(700, 400);
+    canvas.id("my-container");
   rectMode(CENTER);
   angleMode(DEGREES);
+  textAlign(CENTER);
 }
 
 function draw() {
-  background(255);
-  drawSisters(50, height / 2 - 100);
-  drawSisters(150, height / 2 - 90);
-  drawSisters(250, height / 2 - 100);
-  drawSisters(450, height / 2 - 100);
-  drawSisters(550, height / 2 - 90);
-  drawSisters(650, height / 2 - 100);
-  drawVega(width / 2, height / 2 - 90);
-  strokeWeight(5);
-  fill(0);
-  textSize(175);
-  textFont("Noto Serif SC");
-  text("天", 485, 375);
-
-  if (mouseY >= 0 && mouseY <= 400) {
-    let xPos = constrain(mouseX, 0, 700);
-    drawCloud(xPos);
-  } else {
-    drawCloud(0);
+  if(mouseIsPressed && mouseX >= 0 && mouseX <= 700 && mouseY >= 0 && mouseY <= 400){
+    colorBack = 'Crimson';
+  } else{
+    colorBack = 'Black';
   }
+  background(colorBack);
+  drawVega(75, height / 2 - 90);
+  drawAltair(600, height / 2 - 90);
+  strokeWeight(3);
+  fill(0);
+  textSize(100);
+  textFont("Noto Serif SC");
+  text("危险", width/2, height/2);
+  
+  drawCloud(0);
+  drawCloud(500);
 }
 
 function drawVega(x, y) {
   noStroke();
-  fill(0);
+  fill(255);
   drawBody(x, y);
   push();
   translate(x, y);
@@ -40,7 +37,7 @@ function drawVega(x, y) {
   ellipse(-5, -25, 30, 20);
   pop();
 
-  stroke(0);
+  stroke(255);
   strokeWeight(5);
   noFill();
   push();
@@ -56,26 +53,13 @@ function drawVega(x, y) {
   arc(-40, 40, 60, 30, 160, 60);
   pop();
 }
-
-function drawSisters(x, y) {
+function drawAltair(x, y) {
   noStroke();
-  fill(0);
+  fill(255);
   drawBody(x, y);
   push();
   translate(x, y);
-  rotate(-50);
-  circle(-3, -30, 20);
-  ellipse(-5, -25, 30, 20);
-  pop();
-
-  stroke(0);
-  strokeWeight(5);
-  noFill();
-  push();
-  translate(x, y);
-  rotate(-20);
-  circle(-30, -9, 15);
-  circle(-30, 3, 20);
+  circle(0, -30, 30);
   pop();
 }
 
