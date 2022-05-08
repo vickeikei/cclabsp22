@@ -1,6 +1,6 @@
 function setup() {
   let canvas = createCanvas(1000, 550);
- canvas.id("my-container");
+  canvas.id("my-container");
 
 }
 
@@ -17,13 +17,13 @@ function draw() {
   text('   a', 90, 350)
   text('starcrossed', 90, 410)
   text('                story.', 90, 470)
-  
+
   //altair constellation
   let altair = new MainStars(617, 318);
   altair.update();
   altair.checkMouse();
   altair.display();
-  
+
 
   let a = new LittleStars(780, 359);
   a.update();
@@ -59,7 +59,7 @@ function draw() {
   line(780, 359, 902, 421);
   line(780, 359, 697, 149);
   line(697, 149, 721, 121);
-  
+
   //vega constellation
   let vega = new MainStars(278, 117);
   vega.update();
@@ -78,7 +78,7 @@ function draw() {
   let v3 = new LittleStars(351, 277);
   v3.update();
   v3.display();
-  
+
   stroke(255, 200);
   line(278, 117, 280, 182);
   line(280, 182, 280, 232);
@@ -116,18 +116,18 @@ class MainStars {
   checkMouse() {
     let distance = dist(this.x, this.y, mouseX, mouseY);
     if (distance < 20) {
-      if (this.x == 617){
+      if (this.x == 617) {
         this.starName = "a l t a i r"
         if (mouseIsPressed) {
           window.location.href = "altairStory.html";
         }
-      } else if (this.x == 278){
+      } else if (this.x == 278) {
         this.starName = "v e g a"
         if (mouseIsPressed) {
           window.location.href = "vegaStory1.html";
         }
       }
-    } else{
+    } else {
       this.starName = ""
     }
   }
@@ -149,12 +149,12 @@ class MainStars {
     line(0, -5, 0, 5);
     line(-5, 0, 5, 0);
     pop();
-    
+
     push();
     textSize(15)
     fill(255, 255);
     textFont('Prata');
-    text(this.starName, width/2, height/2);
+    text(this.starName, width / 2, height / 2);
     pop();
   }
 }

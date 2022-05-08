@@ -1,17 +1,19 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   font-family: 'Prata', serif;
 }
+
 canvas {
   display: block;
-  z-index: -1; 
+  z-index: -1;
 }
 
 
 #my-container {
   width: 700px;
-  height:700px;
+  height: 700px;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -26,7 +28,7 @@ canvas {
 }
 
 .text-container-p {
- width: 100%;
+  width: 100%;
 }
 
 p {
@@ -35,13 +37,15 @@ p {
   width: 500px;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
   color: black;
   text-decoration: none;
   display: inline-block;
 }
 
-a:hover, a:active {
+a:hover,
+a:active {
   color: red;
   text-decoration: none;
   display: inline-block;
@@ -51,16 +55,15 @@ div {
   float: inline-start;
 }
 
+/* Code below from Professor Moon */
 .panel-box {
   float: left;
   margin: 0 100px;
 }
 
-#altair-container{
+#altair-container {
   width: 5000px;
   height: 500px;
   position: absolute;
-  /* top: 50%; 100px */
   top: 35%;
 }
-

@@ -1,16 +1,16 @@
 let colorBack;
 function setup() {
-    let canvas = createCanvas(700, 400);
-    canvas.id("my-container");
+  let canvas = createCanvas(700, 400);
+  canvas.id("my-container");
   rectMode(CENTER);
   angleMode(DEGREES);
   textAlign(CENTER);
 }
 
 function draw() {
-  if(mouseIsPressed && mouseX >= 0 && mouseX <= 700 && mouseY >= 0 && mouseY <= 400){
+  if (mouseIsPressed && mouseX >= 0 && mouseX <= 700 && mouseY >= 0 && mouseY <= 400) {
     colorBack = 'Crimson';
-  } else{
+  } else {
     colorBack = 'Black';
   }
   background(colorBack);
@@ -20,8 +20,8 @@ function draw() {
   fill(0);
   textSize(100);
   textFont("Noto Serif SC");
-  text("危险", width/2, height/2);
-  
+  text("危险", width / 2, height / 2);
+
   drawCloud(0);
   drawCloud(500);
 }

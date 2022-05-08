@@ -21,18 +21,18 @@ function draw() {
   text("地", 80, 175);
   noStroke();
   if (mouseIsPressed && mouseX >= 0 && mouseX <= 700 && mouseY >= 0 && mouseY <= 400) {
-    
-      fill(109, 175, 222);
-      ellipse(50, 375, 600, 300);
-      fill(94, 178, 204, 100);
-      ellipse(50, 375, 500, 250);
-      ellipse(50, 375, 400, 200);
-    }  
-    else{
+
+    fill(109, 175, 222);
+    ellipse(50, 375, 600, 300);
+    fill(94, 178, 204, 100);
+    ellipse(50, 375, 500, 250);
+    ellipse(50, 375, 400, 200);
+  }
+  else {
     fill(0);
     ellipse(50, 375, 600, 300);
   }
-  
+
 }
 
 function drawVega(x, y) {
