@@ -65,5 +65,12 @@ div {
   width: 5000px;
   height: 500px;
   position: absolute;
-  top: 35%;
+  top: 22%;
+}
+
+#heart-container {
+  width: 5000px;
+  height: 100px;
+  position: absolute;
+  bottom: 10%;
 }
