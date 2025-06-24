@@ -118,11 +118,13 @@ class MainStars {
     if (distance < 20) {
       if (this.x == 617) {
         this.starName = "a l t a i r"
+        this.description = "scroll through panels \nto complete their love"
         if (mouseIsPressed) {
           window.location.href = "altairStory.html";
         }
       } else if (this.x == 278) {
         this.starName = "v e g a"
+        this.description = "scroll or click on the \npictures to unfold the story"
         if (mouseIsPressed) {
           window.location.href = "vegaStory1.html";
         }
@@ -154,7 +156,10 @@ class MainStars {
     textSize(15)
     fill(255, 255);
     textFont('Prata');
+    textAlign(CENTER);
     text(this.starName, width / 2, height / 2);
+    textSize(10);
+    text(this.description, width/2, height/2);
     pop();
   }
 }
