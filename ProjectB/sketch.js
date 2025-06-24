@@ -130,7 +130,8 @@ class MainStars {
         }
       }
     } else {
-      this.starName = ""
+      this.starName = "";
+      this.description = "";
     }
   }
   display() {
@@ -157,7 +158,7 @@ class MainStars {
     fill(255, 255);
     textFont('Prata');
     textAlign(CENTER);
-    text(this.starName, width / 2, height / 2);
+    text(this.starName, width / 2, (height / 2)-25);
     textSize(10);
     text(this.description, width/2, height/2);
     pop();
