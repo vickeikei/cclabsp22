@@ -158,7 +158,7 @@ class MainStars {
     fill(255, 255);
     textFont('Prata');
     textAlign(CENTER);
-    text(this.starName, width / 2, (height / 2)-55);
+    text(this.starName, width / 2, (height / 2)-35);
     textSize(10);
     text(this.description, width/2, height/2);
     pop();
